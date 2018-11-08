@@ -3,7 +3,7 @@ package com.haoche51.checker;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.haoche51.aoplib.annotation.DebugLog;
+import hugo.weaving.DebugLog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         testDebugLog(1);
     }
-
+    @DebugLog
     private void testDebugLog(int i){
         System.out.println("test");
     }
